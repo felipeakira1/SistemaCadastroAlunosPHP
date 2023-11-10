@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E4E4E4;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.menu-lateral {
+    width: 300px;
+    height: 100%;
+    background-color: #202020;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+
+.menu-lateral h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-lateral .opcao-menu {
+    width: calc(100% - 20px);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.menu-lateral .opcao-menu:hover {
+    background-color: #333533;
+}
+
+.conteudo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: calc(100vw - 300px);
+    height: 100%;
+}
+
+#cadastro-container {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%, -50%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #1E1E1E;
+    width: 500px;
+    max-height: 600px;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+#form-aluno {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form-aluno label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form-aluno label input, #form-aluno label select {
+    background-color: #333533;
+    border-radius: 10px;
+    height: 40px;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #333533;
+    box-sizing: border-box;
+    color: #FFF;
+    transition:  border 0.3s ease;
+}
+
+#form-aluno label input:focus, #form-aluno label select:focus {
+    border: 1px solid white;
+}
+
+#form-aluno .campo-duplo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#form-aluno .metade-campo {
+    width: 49%;
+}
+
+#form-aluno #btn-cadastrar {
+    background-color: #16DB65;
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #FFF;
+    font-weight: 700;
+}
