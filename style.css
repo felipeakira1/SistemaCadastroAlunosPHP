@@ -8,14 +8,19 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
 }
 
 .menu-lateral {
     width: 300px;
     height: 100%;
     background-color: #202020;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFF;
 }
 
 .menu-lateral h2 {
@@ -61,6 +66,22 @@ body {
     background-color: #1E1E1E;
     width: 500px;
     max-height: 600px;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pesquisar-container {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-80%, -50%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #1E1E1E;
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
@@ -113,4 +134,29 @@ body {
     font-size: 24px;
     color: #FFF;
     font-weight: 700;
+}
+
+.tabela-alunos {
+    border-collapse: collapse;
+    width: 100%;
+    max-height: 400px;
+    background-color: #DDD;
+    color: #202020;
+    overflow-y: auto;
+    display: block;
+}
+
+.tabela-alunos thead tr th:nth-child(1) {
+    width: 100px;
+}
+
+.tabela-alunos th {
+    background-color: #F2F2F2;
+}
+
+.tabela-alunos th, .tabela-alunos td {
+    border-bottom: 1px solid #C3C3C3;
+    text-align: left;
+    padding: 15px 10px;
+    white-space: nowrap;
 }
