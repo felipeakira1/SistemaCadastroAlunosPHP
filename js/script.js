@@ -22,11 +22,7 @@ function cadastrar_aluno() {
         alert("Não foi possível criar um objeto XMLHttpRequest.");
         return false;
     }
-
-    xhttp.onload = function () {
-        
-    }
-
+    
     xhttp.onerror = function () {
         alert("Erro!")
     }
