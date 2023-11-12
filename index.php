@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Sistema de Cadastro de Alunos</title>
 </head>
 <body>
@@ -11,20 +11,16 @@
         <h2>Sistema de cadastro de alunos</h2>
         <a href="index.php">
             <div class="opcao-menu">
-                <img src="imagens/cadastro_icon.png" alt="Icone de cadastro">
+                <img src="images/cadastro_icon.png" alt="Icone de cadastro">
                 Cadastrar alunos
             </div>
         </a>
-        <a href="pesquisar_alunos.php">
+        <a href="pages/pesquisar_alunos.php">
             <div class="opcao-menu">
-                <img src="imagens/search_icon.png" alt="Icone de pesquisa">
+                <img src="images/search_icon.png" alt="Icone de pesquisa">
                 Pesquisar alunos
             </div>
         </a>
-        <div id="btn-limpar-dados" class="opcao-menu">
-            <img src="imagens/trash_icon.png" alt="Icone de lixo">
-            Limpar dados
-        </div>
     </div>
     <div class="conteudo">
         <main id="cadastro-container">
@@ -68,11 +64,10 @@
                     <input type="email" name="email" id="email" autocomplete="off" placeholder="Digite o e-mail do aluno" required>
                 </label>
                 <!-- <input type="submit" value="Cadastrar"> -->
-                <button id="btn-cadastrar" onclick="cadastrarAluno()">Cadastrar</button>
+                <button type="submit" id="btn-cadastrar" onclick="cadastrar_aluno()">Cadastrar</button>
             </form>
         </main>
     </div>
-    
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
